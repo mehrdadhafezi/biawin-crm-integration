@@ -1,0 +1,79 @@
+﻿# ============================================================
+# BIAWIN CRM - Git Ignore
+# ============================================================
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Secrets / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Databases / dumps
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Archives / builds
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Temporary files
+tmp/
+tmp-*/
+temp/
+scratch/
+backup/
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Generated / runtime
+cache/
+coverage/
+dist/
+
+# WordPress local/runtime
+wp-content/uploads/
+wp-content/cache/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local test environments
+docker-data/
+docker-volumes/
+
+# Staging audit output
+review/_generated/
+
+# Real customer / production data
+plugin/data/blacklisted-customer-ids.txt
+
+# Local audit artifacts — never commit
+review/POTENTIAL-SECRETS.md
